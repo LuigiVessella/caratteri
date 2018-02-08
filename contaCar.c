@@ -4,14 +4,11 @@ int main(){
   int c;
   int cont=0;
 
-  printf("Scrivi qualcosa: ");
-
-  while((c=getchar()) != '\n'){
+  while((c=getchar()) != '\n' && c!=EOF){
     cont++;
   }
 
-  printf("Hai inserito %d caratteri\n", cont);
-    
+  printf("Ci sono %d caratteri\n", cont); 
 
   return 0;
 }
