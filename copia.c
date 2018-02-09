@@ -3,12 +3,11 @@
 int main(){
   int c;
 
-  while((c=getchar()) != '\n' && c != EOF){
-    putchar(c);
+  while (c != EOF){
+	  c = getchar();
+	  putchar(c);
   }
-
   putchar('\n');
-
 
   return 0;
 }
