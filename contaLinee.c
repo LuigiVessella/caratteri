@@ -4,8 +4,8 @@ int main(){
   int c;
   int cont=0;
 
-  while(c!=EOF){
-    if((c=getchar()) == '\n')cont++;
+  while((c=getchar()) != EOF){
+	  if(c=='\n') cont++;
   }
 
   printf("Ho contato %d linee\n", cont);
