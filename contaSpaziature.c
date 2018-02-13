@@ -7,7 +7,8 @@ int main(){
   while((c = getchar()) != EOF ){
 	  if(c == '\n') newl++;
 	  else if(c == ' ') spazi++;
-	  else tabu++;
+	  else if(c == '\t') tabu++;
+	  else;
   }
 
   printf("Caratteri di tabulazione: %d\nSpazi: %d\nNewline: %d\n", tabu, spazi, newl);
