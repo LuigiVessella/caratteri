@@ -1,5 +1,8 @@
 #include<stdio.h>
-
+/*tabella degli stati
+ * NORM > CARATTERE NORMALE \ STATO NORMALE
+ * DOPPIO > SE INCONTRIAMO UNO SPAZIO
+ * */
 int main(){
 	enum STATO { NORM, doppio };
 
