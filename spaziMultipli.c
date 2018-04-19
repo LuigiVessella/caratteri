@@ -1,8 +1,11 @@
 #include<stdio.h>
 /*tabella degli stati
- * NORM > CARATTERE NORMALE \ STATO NORMALE
- * DOPPIO > SE INCONTRIAMO UNO SPAZIO
- * */
+STATO:        INPUT:          OUTPUT:         NUOVO STATO:
+NORM          c!=' '          c               -
+NORM          c==' '          -               DOPPIO
+DOPPIO        c==' '          -               -
+*/
+
 int main(){
 	enum STATO { NORM, doppio };
 
